@@ -1,0 +1,155 @@
+@black: #272727;
+
+.small {
+	max-width:600px;
+	margin:0 auto;
+}
+
+.medium {
+	max-width:900px;
+	margin:0 auto;
+}
+
+.large {
+	max-width:1200px;
+	margin:0 auto;
+}
+
+.x-large {
+	max-width:1470px;
+	margin:0 auto;
+}
+
+#wrapper {
+	background:#fff;
+}
+
+.responsive {
+	max-width:100%;
+}
+
+.center {
+	text-align:center;
+}
+
+.no-margin {
+	margin-bottom:0;
+}
+
+html {
+	height:100%;
+	
+}
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color:@black;
+	font-size:18px;
+	line-height:1.5;
+	min-height:100%;
+	height:100%;
+}
+
+p {
+	margin-bottom:20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	text-decoration:none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom:20px;
+}
+
+.clear {
+	clear:both;
+}
+
+
+
+.home-wrap, .index-wrap, .archive-wrap {
+	width:900px;
+	max-width:100%;
+	margin:30px auto 0;
+	display:flex;
+	justify-content:space-between;
+}
+
+.home-wrap-articles {
+	width:65%;
+	margin-right:5%;
+}
+
+.home-wrap-sidebar {
+	width:30%;
+}
+
+.main-section {
+	padding:30px 0;
+	margin:0 auto;
+}
+
+/*
+
+To make page 100% height of window, get height of header and footer and subtract from 100%
+
+#content {
+	min-height:calc(~'100% - 388px');
+
+	min-height: -moz-calc(~'100% - 388px');
+
+	min-height: -webkit-calc(~'100% - 438px');
+
+	min-height: -o-calc(~'100% - 233px');
+
+
+}*/
+
+/*--------RESPONSIVE---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width:1500px) {
+	.x-large {
+		max-width:92%;
+	}
+}
+
+@media only screen and (max-width:1400px) {
+	#header-inner {
+		max-width:92%;
+	}
+}
+
+@media only screen and (max-width:1250px) {
+	.large {
+		max-width:92%;
+	}
+}
+
+@media only screen and (max-width:950px) {
+	.medium, .home-wrap, .index-wrap, .archive-wrap{
+		max-width:92%;
+	}
+}
+
+@media only screen and (max-width:750px) {
+
+	
+
+	.home-wrap, .archive-wrap, .index-wrap {
+		flex-direction:column;
+	}
+
+	.home-wrap-articles, .home-wrap-sidebar {
+		width:100%;
+	}
+}
+
+@media only screen and (max-width:650px) {
+	.small {
+		max-width:92%;
+	}
+}
